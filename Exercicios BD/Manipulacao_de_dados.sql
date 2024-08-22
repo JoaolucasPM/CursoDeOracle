@@ -1,0 +1,29 @@
+-- Insira um novo registro na tabela TCURSO com os seguintes dados: (5, 'PYTHON PARA INICIANTES', 1200, 30).
+
+INSERT INTO TCURSO VALUES (5, 'PYTHON PARA INICIANTES', 1200, 30);
+
+SELECT * FROM TCURSO
+
+-- Atualize o valor do curso de 'ORACLE DBA' para 550 na tabela TCURSO.
+
+UPDATE TCURSO SET
+  VALOR = 500
+  WHERE NOME = 'ORACLE DBA'
+
+SELECT * FROM TCURSO
+
+-- Apague todos os registros da tabela TCONTRATO onde o valor  (TOTAL) seja IGUAL que 1000.
+
+SELECT * FROM TCONTRATO
+  WHERE TOTAL = 1000
+
+DELETE TCONTRATO
+ WHERE TOTAL = 1000
+
+SELECT * FROM TCONTRATO
+
+
+
+
+
+ROLLBACK
